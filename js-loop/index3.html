@@ -1,0 +1,142 @@
+<!--小练习，练习使用循环实现一个九九乘法表
+
+第一步，最低要求：在Console中按行输出 n * m = t
+然后，尝试在网页中，使用table来实现一个九九乘法表-->
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8" />
+<title>IFE ECMAScript3</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+table {
+	width: 500px;
+	height: 500px;
+	border-collapse: collapse;
+}
+td {
+	border: 1px solid #141414;
+	
+	text-align: center;
+}
+</style>
+<body>
+<table>
+	<tr>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+</table>
+<script>
+var h , v;
+for (h = 1;h <= 9;h++){
+	var str = "";
+	for (v = 1;v <= h;v++){
+		var td = document.querySelector("table tr:nth-of-type(" + h + ") > td:nth-of-type(" + v +")");
+		td.innerHTML = v + "*" + h;
+		str += (v + "*" + h + " ")
+	}
+	console.log(str);
+}	
+</script>
+</body>
+</html>
